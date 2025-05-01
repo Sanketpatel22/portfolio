@@ -25,7 +25,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-bold text-center">I&apos;m a developer<span className="text-primary">Sanket Patel</span>, an IT Engineering Student</h3>
+            <h3 className="text-2xl font-bold text-center">I&apos;m a developer <span className="text-primary">Sanket Patel</span>, an IT Engineering Student</h3>
             
             <p className="text-foreground/80">
               I am passionate about web development and building interactive, user-friendly websites and applications. 
