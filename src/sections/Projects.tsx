@@ -20,7 +20,7 @@ const projects: Project[] = [
     id: 1,
     title: "The Prasang",
     description: "A comprehensive web platform offering various services including event management, digital marketing, and more.",
-    image: "/placeholder-project1.jpg",
+    image: "/project-prasang.png",
     technologies: ["React", "Next.js", "Tailwind CSS", "Node.js"],
     liveLink: "https://theprasang.com",
     githubLink: ""
@@ -29,7 +29,7 @@ const projects: Project[] = [
     id: 2,
     title: "Nexide Pharma",
     description: "A pharmaceutical company website with product catalog, company information, and contact features.",
-    image: "/placeholder-project2.jpg",
+    image: "/project-nexide.jpg",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
     liveLink: "https://nexidepharma.vercel.app",
     githubLink: ""
@@ -71,14 +71,16 @@ const Projects = () => {
             >
               <div className="relative overflow-hidden rounded-lg shadow-lg border border-border hover:border-primary/50 transition-colors">
                 <div className="relative h-64 w-full bg-muted flex items-center justify-center">
-                  <span className="text-foreground/30">Project Image</span>
-                  {/* Uncomment when you have project images */}
-                  {/* <Image 
-                    src={project.image} 
-                    alt={project.title} 
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  /> */}
+                  {project.image ? (
+                    <Image 
+                      src={project.image} 
+                      alt={project.title} 
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <span className="text-foreground/30">Project Image</span>
+                  )}
                 </div>
                 
                 <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -141,7 +143,7 @@ const Projects = () => {
           className="text-center mt-12"
         >
           <a 
-            href="https://github.com/" 
+            href="https://github.com/Sanketpatel22" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 border border-border hover:border-primary hover:text-primary rounded-md transition-colors"

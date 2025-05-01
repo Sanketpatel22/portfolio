@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiInstagram } from 'react-icons/fi';
 
 const Hero = () => {
   return (
@@ -14,12 +14,12 @@ const Hero = () => {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/20 rounded-full blur-3xl" />
       </div>
       
-      <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col space-y-6"
+          className="flex flex-col space-y-6 max-w-2xl mx-auto text-center"
         >
           <div>
             <motion.h2 
@@ -52,7 +52,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
-            className="text-foreground/70 max-w-md"
+            className="text-foreground/70 max-w-md mx-auto"
           >
             Passionate about creating responsive and interactive web experiences. 
             Currently pursuing IT Engineering while building projects that make a difference.
@@ -62,7 +62,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.5 }}
-            className="flex space-x-4"
+            className="flex space-x-4 justify-center"
           >
             <Link href="#projects" className="px-6 py-2.5 bg-primary hover:bg-primary/90 text-white rounded-md transition-colors">
               View Projects
@@ -76,39 +76,21 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.5 }}
-            className="flex space-x-4 pt-4"
+            className="flex space-x-4 pt-4 justify-center"
           >
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+            <a href="https://github.com/Sanketpatel22" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
               <FiGithub size={22} />
             </a>
-            <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/sheshan-sutariya/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
               <FiLinkedin size={22} />
             </a>
-            <a href="mailto:contact@example.com" className="text-foreground/70 hover:text-primary transition-colors">
+            <a href="https://www.instagram.com/sutariya_sanket_/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+              <FiInstagram size={22} />
+            </a>
+            <a href="mailto:sanketsutariya1482@gmail.com" className="text-foreground/70 hover:text-primary transition-colors">
               <FiMail size={22} />
             </a>
           </motion.div>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex justify-center md:justify-end"
-        >
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 p-1">
-            <div className="w-full h-full rounded-full overflow-hidden bg-muted flex items-center justify-center">
-              {/* Replace with your actual photo */}
-              <span className="text-xl text-foreground/50">Your Photo</span>
-              {/* Uncomment when you have an image */}
-              {/* <Image
-                src="/profile.jpg"
-                alt="Sanket Patel"
-                fill
-                className="object-cover"
-              /> */}
-            </div>
-          </div>
         </motion.div>
       </div>
       

@@ -18,30 +18,7 @@ const About = () => {
           <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative aspect-square max-w-md mx-auto"
-          >
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-2xl -rotate-6"></div>
-            <div className="absolute inset-0 bg-muted rounded-2xl overflow-hidden">
-              {/* Placeholder for actual image */}
-              <div className="w-full h-full flex items-center justify-center">
-                <span className="text-foreground/50 text-lg">Your Image</span>
-              </div>
-              {/* Uncomment when you have an image */}
-              {/* <Image
-                src="/about.jpg"
-                alt="Sanket Patel"
-                fill
-                className="object-cover"
-              /> */}
-            </div>
-          </motion.div>
-          
+        <div className="max-w-3xl mx-auto">
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -49,7 +26,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-bold">I'm <span className="text-primary">Sanket Patel</span>, an IT Engineering Student</h3>
+            <h3 className="text-2xl font-bold text-center">I'm <span className="text-primary">Sanket Patel</span>, an IT Engineering Student</h3>
             
             <p className="text-foreground/80">
               I am passionate about web development and building interactive, user-friendly websites and applications. 

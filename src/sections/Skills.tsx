@@ -2,10 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { 
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, 
-  FaDatabase, FaGitAlt, FaFigma, FaBootstrap 
+  FaHtml5, FaCss3Alt, FaJs, 
+  FaDatabase, FaGitAlt, FaFigma, FaBootstrap, FaGithub 
 } from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si';
+import { SiTailwindcss } from 'react-icons/si';
 import { IconType } from 'react-icons';
 
 interface Skill {
@@ -19,13 +19,10 @@ const skills: Skill[] = [
   { name: "HTML", icon: FaHtml5, color: "#E34F26", level: 90 },
   { name: "CSS", icon: FaCss3Alt, color: "#1572B6", level: 85 },
   { name: "JavaScript", icon: FaJs, color: "#F7DF1E", level: 80 },
-  { name: "TypeScript", icon: SiTypescript, color: "#3178C6", level: 70 },
-  { name: "React", icon: FaReact, color: "#61DAFB", level: 85 },
-  { name: "Next.js", icon: SiNextdotjs, color: "#000000", level: 75 },
-  { name: "Node.js", icon: FaNodeJs, color: "#339933", level: 70 },
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4", level: 80 },
   { name: "Bootstrap", icon: FaBootstrap, color: "#7952B3", level: 85 },
   { name: "Git", icon: FaGitAlt, color: "#F05032", level: 75 },
+  { name: "GitHub", icon: FaGithub, color: "#c9d1d9", level: 78 },
   { name: "Database", icon: FaDatabase, color: "#4479A1", level: 65 },
   { name: "Figma", icon: FaFigma, color: "#F24E1E", level: 70 },
 ];
