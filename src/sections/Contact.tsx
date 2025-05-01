@@ -69,7 +69,7 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <p className="text-foreground/70 mb-8">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
               </p>
             </div>
             
@@ -144,7 +144,7 @@ const Contact = () => {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-4 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-md mb-6"
                 >
-                  Your message has been sent successfully! I'll get back to you soon.
+                  Your message has been sent successfully! I&apos;ll get back to you soon.
                 </motion.div>
               ) : null}
               

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 import { FiGithub, FiLinkedin, FiMail, FiInstagram } from 'react-icons/fi';
 
@@ -28,7 +27,7 @@ const Hero = () => {
               transition={{ delay: 0.2 }}
               className="text-lg md:text-xl text-primary"
             >
-              Hello, I'm
+              Hello, I&apos;m
             </motion.h2>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}

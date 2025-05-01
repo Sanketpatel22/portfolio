@@ -53,7 +53,7 @@ const Projects = () => {
           <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">My Projects</h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
           <p className="mt-6 text-foreground/70 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on. Each project was a unique challenge and learning experience.
+            Here are some of the projects I&apos;ve worked on. Each project was a unique challenge and learning experience.
           </p>
         </motion.div>
         
